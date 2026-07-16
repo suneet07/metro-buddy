@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Metro Buddy — Delhi</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- JOIN SCREEN -->
+  <section id="join" class="screen">
+    <div class="join-card">
+      <div class="logo">🚇</div>
+      <h1>Metro Buddy</h1>
+      <p class="sub">See which station your friends are at, and roll together.</p>
+      <label>Your name
+        <input id="nameInput" type="text" placeholder="e.g. Suneet" maxlength="18" autocomplete="off" />
+      </label>
+      <label>Group code
+        <input id="groupInput" type="text" placeholder="e.g. morning-crew" maxlength="24" autocomplete="off" />
+      </label>
+      <p class="hint">Share the same code with your friends to see each other.</p>
+      <button id="joinBtn" class="primary">Join group</button>
+    </div>
+  </section>
+
+  <!-- MAIN APP -->
+  <section id="app" class="screen hidden">
+    <header class="topbar">
+      <div>
+        <div class="group-name" id="groupLabel"></div>
+        <div class="you-line" id="youStatus">Locating…</div>
+      </div>
+      <button id="leaveBtn" class="ghost">Leave</button>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="friends">Friends</button>
+      <button class="tab" data-tab="map">Map</button>
+      <button class="tab" data-tab="route">Route</button>
+    </nav>
+
+    <!-- FRIENDS TAB -->
+    <div class="tab-panel" id="tab-friends">
+      <div class="me-card" id="meCard"></div>
+      <div class="target-row">
+        <span>My destination</span>
+        <select id="myTarget" class="station-select"><option value="">— none —</option></select>
+      </div>
+      <h2 class="section-title">In your group</h2>
+      <div id="friendsList" class="friends"></div>
+      <p class="empty" id="friendsEmpty">Waiting for friends to join <b id="emptyCode"></b>…</p>
+    </div>
+
+    <!-- MAP TAB -->
+    <div class="tab-panel hidden" id="tab-map">
+      <div id="map"></div>
+      <div class="map-legend" id="mapLegend"></div>
+    </div>
+
+    <!-- ROUTE TAB -->
+    <div class="tab-panel hidden" id="tab-route">
+      <div class="route-form">
+        <label>From
+          <select id="fromSel" class="station-select"></select>
+        </label>
+        <button id="swapBtn" class="ghost swap" title="Swap">⇅</button>
+        <label>To
+          <select id="toSel" class="station-select"></select>
+        </label>
+        <button id="planBtn" class="primary">Plan route</button>
+      </div>
+      <div id="routeResult" class="route-result"></div>
+    </div>
+
+    <footer class="foot">
+      <a href="DMRC-NMRC-NCRTC-MAP-16.07.2026.14a605a6.pdf" target="_blank">Official metro map (Jul 2026)</a>
+      <span id="conn" class="conn">●</span>
+    </footer>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="router.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+Station,Line,Latitude,Longitude,Order,Is Junction
+Majlis Park,Pink Line,28.7244312,77.181964,1,0
+Shalimar Bagh,Pink Line,28.70181952,77.16518563,2,0
+Netaji Subhash Place,Pink Line,28.69629049,77.15261431,3,1
+Shakurpur,Pink Line,28.6857668,77.1496094,4,0
+Punjabi Bagh West,Pink Line,28.67273177,77.13919754,5,0
+ESI Hospital,Pink Line,28.6580737,77.1272678,6,0
+Rajouri Garden,Pink Line,28.6490207,77.1227192,7,1
+Mayapuri,Pink Line,28.6371795,77.1297333,8,0
+Naraina Vihar,Pink Line,28.62412845,77.1364855,9,0
+Delhi Cantonment,Pink Line,28.60878204,77.14035272,10,0
+Durgabai Deshmukh South Campus,Pink Line,28.5894384,77.1690817,11,0
+Sir Vishweshwaraiah Moti Bagh,Pink Line,28.5785326,77.175741,12,0
+Bhikaji Cama Place,Pink Line,28.56790025,77.18701648,13,0
+Sarojini Nagar,Pink Line,28.57581411,77.19858247,14,0
+INA,Pink Line,28.57440755,77.21024148,15,1
+South Extension,Pink Line,28.56862334,77.22025631,16,0
+Lajpat Nagar,Pink Line,28.57057512,77.2364616,17,1
+Vinobapuri,Pink Line,28.56592632,77.25050203,18,0
+Ashram,Pink Line,28.5724231,77.2585979,19,0
+Sarai Kale Khan,Pink Line,28.58932578,77.25712194,20,0
+Mayur Vihar I,Pink Line,28.60420231,77.28951871,21,1
+Mayur Vihar Pocket I,Pink Line,28.60582698,77.29870938,22,0
+Trilokpuri Sanjay Lake,Pink Line,28.613453,77.3088549,23,0
+East Vinod Nagar Mayur Vihar-II,Pink Line,28.6203059,77.30528114,24,0
+Mandawali West Vinod Nagar,Pink Line,28.6249712,77.3044906,25,0
+IP Extension,Pink Line,28.63192242,77.31080163,26,0
+Anand Vihar,Pink Line,28.64696577,77.31591943,27,1
+Karkarduma,Pink Line,28.64840025,77.30563456,28,1
+Karkarduma Court,Pink Line,28.6536001,77.2957877,29,0
+Krishna Nagar,Pink Line,28.6578461,77.2901853,30,0
+East Azad Nagar,Pink Line,28.6646964,77.284881,31,0
+Welcome,Pink Line,28.67187728,77.27766198,32,1
+Jaffrabad,Pink Line,28.6826822,77.2748055,33,0
+Maujpur-Babarpur,Pink Line,28.69197845,77.27962397,34,0
+Gokulpuri,Pink Line,28.7024752,77.2861253,35,0
+Johari Enclave,Pink Line,28.71326144,77.29003782,36,0
+Shiv Vihar,Pink Line,28.72159399,77.28951193,37,0

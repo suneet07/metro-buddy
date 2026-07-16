@@ -1,0 +1,37 @@
+Station,Line,Latitude,Longitude,Order,Is Junction
+Samaypur Badli,Yellow Line,28.7446158,77.1382654,1,0
+Rohini Sector 18,Yellow Line,28.7383477,77.1398323,2,0
+Haiderpur,Yellow Line,28.7301214,77.1494029,3,0
+Jahangirpuri,Yellow Line,28.72586625,77.16279663,4,0
+Adarsh Nagar,Yellow Line,28.7144008,77.1672884,5,0
+Azadpur,Yellow Line,28.7076568,77.1755473,6,1
+Model Town,Yellow Line,28.7027136,77.1939912,7,0
+GTB Nagar,Yellow Line,28.6981317,77.2064113,8,0
+Vishwa Vidyalaya,Yellow Line,28.6950369,77.2147192,9,0
+Vidhan Sabha,Yellow Line,28.6863222,77.2217271,10,0
+Civil Lines,Yellow Line,28.6768508,77.2250299,11,0
+Kashmere Gate,Yellow Line,28.66752988,77.22824749,12,1
+Chandni Chowk,Yellow Line,28.6605039,77.2297797,13,0
+Chawri Bazar,Yellow Line,28.6501605,77.2295008,14,0
+New Delhi,Yellow Line,28.64374716,77.2229727,15,1
+Rajiv Chowk,Yellow Line,28.6327804,77.2196996,16,1
+Patel Chowk,Yellow Line,28.6229664,77.214031,17,0
+Central Secretariat,Yellow Line,28.6158794,77.2122822,18,1
+Udyog Bhawan,Yellow Line,28.6105302,77.2131076,19,0
+Lok Kalyan Marg,Yellow Line,28.59767764,77.2112116,20,0
+Jor Bagh,Yellow Line,28.58587751,77.21253229,21,0
+INA,Yellow Line,28.57440755,77.21024148,22,1
+AIIMS,Yellow Line,28.5668602,77.2078058,23,0
+Green Park,Yellow Line,28.5585815,77.2067183,24,0
+Hauz Khas,Yellow Line,28.5442564,77.2067072,25,1
+Malviya Nagar,Yellow Line,28.5339201,77.2124474,26,0
+Saket,Yellow Line,28.5244107,77.2137253,27,0
+Qutab Minar,Yellow Line,28.51299944,77.18640052,28,0
+Chhatarpur,Yellow Line,28.5067242,77.1750019,29,0
+Ghitorni,Yellow Line,28.493751,77.1491866,30,0
+Arjan Garh,Yellow Line,28.4807352,77.1257622,31,0
+Guru Dronacharya,Yellow Line,28.4820212,77.1022685,32,0
+Sikandarpur,Yellow Line,28.4812704,77.092999,33,1
+MG Road,Yellow Line,28.4794579,77.0804652,34,0
+IFFCO Chowk,Yellow Line,28.4723277,77.0724222,35,0
+HUDA City Centre,Yellow Line,28.4593429,77.0726571,36,0

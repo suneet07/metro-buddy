@@ -1,0 +1,50 @@
+Station,Line,Latitude,Longitude,Order,Is Junction
+Dwarka Sector 21,Orange Line,28.55219996,77.0583057,1,0
+Dwarka Sector 8,Blue Line,28.5656109,77.0670366,2,0
+Dwarka Sector 9,Blue Line,28.574272,77.0653316,3,0
+Dwarka Sector 10,Blue Line,28.5810577,77.0574996,4,0
+Dwarka Sector 11,Blue Line,28.5864469,77.0494375,5,0
+Dwarka Sector 12,Blue Line,28.5922362,77.0407315,6,0
+Dwarka Sector 13,Blue Line,28.597009,77.0335407,7,0
+Dwarka Sector 14,Blue Line,28.60225285,77.02595656,8,0
+Dwarka,Blue Line,28.61493131,77.02273466,9,1
+Dwarka Mor,Blue Line,28.61931,77.0332792,10,0
+Uttam Nagar West,Blue Line,28.621757,77.0557122,11,0
+Uttam Nagar East,Blue Line,28.6248465,77.0652861,12,0
+Janakpuri West,Blue Line,28.6289502,77.0779235,13,1
+Janakpuri East,Blue Line,28.633021,77.086757,14,0
+Tilak Nagar,Blue Line,28.6365482,77.0964961,15,0
+Subhash Nagar,Blue Line,28.6418074,77.1087611,16,0
+Tagore Garden,Blue Line,28.6437639,77.1128454,17,0
+Rajouri Garden,Blue Line,28.6490207,77.1227192,18,1
+Ramesh Nagar,Blue Line,28.6527444,77.1316496,19,0
+Moti Nagar,Blue Line,28.657859,77.1424288,20,0
+Kirti Nagar,Blue Line,28.65569853,77.15064289,21,1
+Shadipur,Blue Line,28.6516362,77.1582947,22,0
+Patel Nagar,Blue Line,28.6455858,77.1686983,23,0
+Rajendra Place,Blue Line,28.6424955,77.1782756,24,0
+Karol Bagh,Blue Line,28.6441866,77.189132,25,0
+Jhandewalan,Blue Line,28.6443188,77.1999165,26,0
+Ramakrishna Ashram Marg,Blue Line,28.6392436,77.2085787,27,0
+Rajiv Chowk,Blue Line,28.6327804,77.2196996,28,1
+Barakhambha Road,Blue Line,28.6297676,77.2250046,29,0
+Mandi House,Blue Line,28.6255556,77.234195,30,1
+Supreme Court,Blue Line,28.6222879,77.23943397,31,0
+Indraprastha,Blue Line,28.6206019,77.249551,32,0
+Yamuna Bank,Blue Line,28.6232784,77.26792405,33,1
+Akshardham,Blue Line,28.61784195,77.27948814,34,0
+Mayur Vihar I,Blue Line,28.60420231,77.28951871,35,1
+Mayur Vihar Extension,Blue Line,28.59415815,77.29458935,36,0
+New Ashok Nagar,Blue Line,28.5890885,77.3015085,37,0
+Noida Sector 15,Blue Line,28.58510867,77.31164663,38,0
+Noida Sector 16,Blue Line,28.57827682,77.31776219,39,0
+Noida Sector 18,Blue Line,28.57072558,77.32613068,40,0
+Botanical Garden,Blue Line,28.5638964,77.334332,41,1
+Golf Course,Blue Line,28.56720697,77.34594809,42,0
+Noida City Centre,Blue Line,28.57467954,77.35607794,43,0
+Noida Sector 34,Blue Line,28.58009268,77.36350331,44,0
+Noida Sector 52,Blue Line,28.58670076,77.37277894,45,1
+Noida Sector 61,Blue Line,28.59765097,77.37231875,46,0
+Noida Sector 59,Blue Line,28.60650833,77.37273047,47,0
+Noida Sector 62,Blue Line,28.61702382,77.37362002,48,0
+Noida Electronic City,Blue Line,28.62795575,77.37495977,49,0

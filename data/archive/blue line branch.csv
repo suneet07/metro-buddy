@@ -1,0 +1,9 @@
+Station,Line,Latitude,Longitude,Order,Is Junction
+Yamuna Bank,Blue Line Branch,28.6232784,77.26792405,1,0
+Laxmi Nagar,Blue Line branch,28.63055515,77.27763317,2,0
+Nirman Vihar,Blue Line branch,28.63650605,77.28683489,3,0
+Preet Vihar,Blue Line branch,28.6414952,77.29537443,4,0
+Karkarduma,Blue Line Branch,28.64840025,77.30563456,5,1
+Anand Vihar,Blue Line Branch,28.64696577,77.31591943,6,1
+Kaushambi,Blue Line branch,28.6453286,77.3243485,7,0
+Vaishali,Blue Line branch,28.64985186,77.33969827,8,0

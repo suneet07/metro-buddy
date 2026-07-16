@@ -1,0 +1,26 @@
+Station,Line,Latitude,Longitude,Order,Is Junction
+Botanical Garden,Magenta Line,28.5638964,77.334332,1,0
+Okhla Bird Sanctuary,Magenta Line,28.55290372,77.32163521,2,0
+Kalindi Kunj,Magenta Line,28.54281335,77.31014327,3,0
+Jasola Vihar Shaheen Bagh,Magenta Line,28.54600162,77.29662941,4,0
+Okhla Vihar,Magenta Line,28.5613002,77.2919304,5,0
+Jamia Millia Islamia,Magenta Line,28.56291327,77.2862455,6,0
+Sukhdev Vihar,Magenta Line,28.5597477,77.2749004,7,0
+Okhla NSIC,Magenta Line,28.5544828,77.2648487,8,0
+Kalkaji Mandir,Magenta Line,28.5497752,77.2606671,9,1
+Nehru Enclave,Magenta Line,28.54586176,77.25117334,10,0
+Greater Kailash,Magenta Line,28.5418777,77.2384553,11,0
+Chirag Delhi,Magenta Line,28.54121711,77.22932954,12,0
+Panchsheel Park,Magenta Line,28.54233242,77.22051369,13,0
+Hauz Khas,Magenta Line,28.5442564,77.2067072,14,1
+IIT,Magenta Line,28.54720866,77.19379341,15,0
+R.K.Puram,Magenta Line,28.55035665,77.18517043,16,0
+Munirka,Magenta Line,28.55791854,77.17395607,17,0
+Vasant Vihar,Magenta Line,28.557867,77.16098723,18,0
+Shankar Vihar,Magenta Line,28.56080894,77.14029828,19,0
+Terminal 1-IGI Airport,Magenta Line,28.56529715,77.12237716,20,0
+Sadar Bazaar Cantonment,Magenta Line,28.5771509,77.1111533,21,0
+Palam,Magenta Line,28.58909509,77.08291643,22,0
+Dashrath Puri,Magenta Line,28.6018751,77.0823561,23,0
+Dabri Mor-Janakpuri South,Magenta Line,28.6157555,77.085178,24,0
+Janakpuri West,Magenta Line,28.6289502,77.0779235,25,0
