@@ -1,0 +1,12 @@
+# Render Blueprint — deploys Metro Buddy as a free Node web service.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: metro-buddy
+    runtime: node
+    plan: free
+    region: singapore          # closest Render region to India; change if you like
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true            # redeploy automatically on every git push

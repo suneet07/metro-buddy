@@ -3,82 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#251a47" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚇</text></svg>" />
   <title>Metro Buddy — Delhi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- JOIN SCREEN -->
-  <section id="join" class="screen">
+
+  <!-- ===== JOIN SCREEN ===== -->
+  <section id="join" class="screen join">
+    <video class="bg-video" src="assets/cave.mp4" autoplay loop muted playsinline></video>
+    <div class="join-scrim"></div>
+    <div class="shapes" aria-hidden="true">
+      <span class="shape s1"></span><span class="shape s2"></span>
+      <span class="shape s3"></span><span class="shape s4"></span>
+    </div>
     <div class="join-card">
-      <div class="logo">🚇</div>
-      <h1>Metro Buddy</h1>
-      <p class="sub">See which station your friends are at, and roll together.</p>
-      <label>Your name
+      <div class="logo-badge">🚇</div>
+      <h1 class="title">Metro <span>Buddy</span></h1>
+      <p class="tagline">See which station your crew is at — and roll together.</p>
+      <label class="field">
+        <span class="field-label gold">Your name</span>
         <input id="nameInput" type="text" placeholder="e.g. Suneet" maxlength="18" autocomplete="off" />
       </label>
-      <label>Group code
+      <label class="field">
+        <span class="field-label gold">Group code</span>
         <input id="groupInput" type="text" placeholder="e.g. morning-crew" maxlength="24" autocomplete="off" />
       </label>
-      <p class="hint">Share the same code with your friends to see each other.</p>
-      <button id="joinBtn" class="primary">Join group</button>
+      <p class="hint">Everyone with the same code sees each other <span class="gold">✦</span></p>
+      <button id="joinBtn" class="btn-gold">Hop aboard →</button>
     </div>
   </section>
 
-  <!-- MAIN APP -->
-  <section id="app" class="screen hidden">
+  <!-- ===== APP ===== -->
+  <section id="app" class="screen app hidden">
     <header class="topbar">
-      <div>
-        <div class="group-name" id="groupLabel"></div>
-        <div class="you-line" id="youStatus">Locating…</div>
+      <div class="brand">
+        <div class="logo-sm">🚇</div>
+        <div>
+          <div class="brand-name">Metro <span>Buddy</span></div>
+          <div id="youStatus" class="status">Locating…</div>
+        </div>
       </div>
-      <button id="leaveBtn" class="ghost">Leave</button>
+      <button id="leaveBtn" class="btn-ghost">Leave</button>
     </header>
 
-    <nav class="tabs">
-      <button class="tab active" data-tab="friends">Friends</button>
-      <button class="tab" data-tab="map">Map</button>
-      <button class="tab" data-tab="route">Route</button>
+    <div class="banner">
+      <video class="bg-video" src="assets/cave.mp4" autoplay loop muted playsinline></video>
+      <div class="banner-scrim"></div>
+      <div class="banner-row">
+        <div class="banner-text">
+          <div id="groupLabel" class="banner-group">…</div>
+          <div id="ridersText" class="banner-riders">just you so far</div>
+        </div>
+        <span class="live-pill"><span id="conn" class="live-dot"></span>live</span>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- FRIENDS -->
+      <div id="tab-friends" class="tab-panel">
+        <div class="me-card">
+          <div class="me-head">
+            <div id="meInitials" class="avatar me-avatar">🙂</div>
+            <div class="me-id">
+              <div class="me-name"><span id="meName">You</span> <span class="you-tag">(you)</span></div>
+              <div class="me-loc"><span id="meLineDot" class="line-dot"></span><span id="meStationText">Locating…</span></div>
+            </div>
+          </div>
+          <div class="me-selects">
+            <label class="field">
+              <span class="field-label gold">My station</span>
+              <select id="meStation" class="sel"></select>
+            </label>
+            <label class="field">
+              <span class="field-label pink">Heading to</span>
+              <select id="myTarget" class="sel"><option value="">— nowhere yet —</option></select>
+            </label>
+          </div>
+        </div>
+
+        <div class="sec-title"><span class="gold">✦</span><span>In your group</span><span class="sec-rule"></span><span id="friendsCount" class="gold">0</span></div>
+
+        <div id="friendsList" class="friends"></div>
+        <div id="friendsEmpty" class="empty-card">Waiting for your crew to hop on <b id="emptyCode" class="gold"></b>… share the code!</div>
+
+        <div class="foot">
+          <a href="metro-map.pdf" target="_blank">Official metro map ↗</a>
+          <span>made for the morning crew</span>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div id="tab-map" class="tab-panel hidden">
+        <div class="map-frame"><div id="map"></div></div>
+        <div id="mapLegend" class="map-legend"></div>
+      </div>
+
+      <!-- ROUTE -->
+      <div id="tab-route" class="tab-panel hidden">
+        <div class="route-card">
+          <div class="route-grid">
+            <label class="field from-field">
+              <span class="field-label green">From</span>
+              <select id="fromSel" class="sel"></select>
+            </label>
+            <button id="swapBtn" class="btn-swap" title="Swap" aria-label="Swap from and to stations">⇅</button>
+            <label class="field to-field">
+              <span class="field-label pink">To</span>
+              <select id="toSel" class="sel"></select>
+            </label>
+            <button id="planBtn" class="btn-gold plan-btn">Plan my ride ✦</button>
+          </div>
+        </div>
+        <div id="routeResult" class="route-result">
+          <div class="route-idle">Where are we headed? <span class="gold">✦</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="tabbar">
+      <button class="tab active" data-tab="friends" aria-label="Friends tab">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6"></path><circle cx="17" cy="9" r="2.6"></circle><path d="M15.8 14.7c2.2.3 3.9 1.6 4.5 3.9"></path></svg>
+        <span>Friends</span>
+      </button>
+      <button class="tab" data-tab="map" aria-label="Live map tab">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.8 6v14L9 18l6 2 5.2-2V4L15 6 9 4z"></path><path d="M9 4v14"></path><path d="M15 6v14"></path></svg>
+        <span>Map</span>
+      </button>
+      <button class="tab" data-tab="route" aria-label="Route planner tab">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.4"></circle><circle cx="18" cy="5" r="2.4"></circle><path d="M8.4 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.6"></path></svg>
+        <span>Route</span>
+      </button>
     </nav>
-
-    <!-- FRIENDS TAB -->
-    <div class="tab-panel" id="tab-friends">
-      <div class="me-card" id="meCard"></div>
-      <div class="target-row">
-        <span>My destination</span>
-        <select id="myTarget" class="station-select"><option value="">— none —</option></select>
-      </div>
-      <h2 class="section-title">In your group</h2>
-      <div id="friendsList" class="friends"></div>
-      <p class="empty" id="friendsEmpty">Waiting for friends to join <b id="emptyCode"></b>…</p>
-    </div>
-
-    <!-- MAP TAB -->
-    <div class="tab-panel hidden" id="tab-map">
-      <div id="map"></div>
-      <div class="map-legend" id="mapLegend"></div>
-    </div>
-
-    <!-- ROUTE TAB -->
-    <div class="tab-panel hidden" id="tab-route">
-      <div class="route-form">
-        <label>From
-          <select id="fromSel" class="station-select"></select>
-        </label>
-        <button id="swapBtn" class="ghost swap" title="Swap">⇅</button>
-        <label>To
-          <select id="toSel" class="station-select"></select>
-        </label>
-        <button id="planBtn" class="primary">Plan route</button>
-      </div>
-      <div id="routeResult" class="route-result"></div>
-    </div>
-
-    <footer class="foot">
-      <a href="DMRC-NMRC-NCRTC-MAP-16.07.2026.14a605a6.pdf" target="_blank">Official metro map (Jul 2026)</a>
-      <span id="conn" class="conn">●</span>
-    </footer>
   </section>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
